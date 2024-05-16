@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Align</title>
+  <style>
+    #container  {
+      display: flex;
+      background: grey;
+      flex-wrap: wrap ;
+      /* Align items horizontal */
+      /* justify-content: flex-start; */
+      /* justify-content: flex-end; */
+      /* justify-content: space-around ; */
+      /* justify-content: space-between ; */
+      justify-content: space-evenly ;
+      height: 600px;
+      /* Align items vertical (must be heights) */
+      /* align-items: stretch; */
+      /* align-items: flex-start; */
+      /* align-items: flex-end; */
+      /* align-items: center; */
+      align-items: baseline;
+
+      /* Align items vertical where extra space */
+
+      /* align-content: flex-start;
+      align-content: flex-end;
+      align-content: space-around; */
+      /* align-content: space-between; */
+    }
+
+    .item-1 {
+      order: 3;
+
+    }
+
+    .item-2 {
+      /* Align single item vertical */
+      /* align-self: flex-end; */
+      /* align-self: flex-start; */
+      align-self: center;
+      /* align-self: baseline; */
+      /* align-self: stretch; */
+      order: 2;
+
+    }
+
+    .item-3 {
+      order: 1;
+    }
+
+    .item {
+      background: #f4f4f4;
+      border: #ccc solid  1px;
+      text-align: center;
+      padding: 1rem;
+      margin: 0.5rem;
+      flex-basis: 200px;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="item item-1">
+      <h3>Item 1</h3>
+    </div>
+    <div class="item item-2">
+      <h3>Item 2</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+  </div>
+</body>
+</html>

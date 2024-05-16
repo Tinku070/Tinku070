@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>After | Before</title>
+  <style>
+    /* .is-required::after {
+      content: '*';
+      color: red;
+      padding-left: 20px;
+    } */
+    /* .is-required::before {
+      content: '*';
+      color: red;
+      padding-left: 20px;
+    } */
+
+    body {
+      background: black;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      
+    }
+    
+    header ::before{
+      content: '';
+      background: url('https://images.pexels.com/photos/11418829/pexels-photo-11418829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+      opacity: 0.4;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    header > h1 {
+      font-size: 4rem;
+      margin: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- <label class="is-required" for="name">Name</label>
+  <input type="text"> -->
+  <header>
+    <h1>Hello Wellcome </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, consequuntur?</p>
+  </header>
+  
+  <section>
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi praesentium quia dignissimos quam reiciendis. Libero, eius optio eligendi quasi culpa recusandae, provident quod dolores ut modi possimus commodi, cumque eos excepturi? Repellendus, neque. Corrupti non neque sit similique, minus illo.</p>
+  </section>
+</body>
+</html>
